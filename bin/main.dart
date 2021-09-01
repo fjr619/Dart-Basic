@@ -1,16 +1,18 @@
 import 'dart:io';
 
+import 'package:contoh_dart_project/example_inheritance/FlyingMonster.dart';
 import 'package:contoh_dart_project/example_inheritance/Hero.dart';
 import 'package:contoh_dart_project/example_inheritance/Monster.dart';
 import 'package:contoh_dart_project/example_inheritance/MonsterKecoa.dart';
 import 'package:contoh_dart_project/example_inheritance/MonsterUbur2.dart';
+import 'package:contoh_dart_project/example_inheritance/MonsterUcoa.dart';
 
 main(List<String> args) {
-  var hero = Hero();
-  hero.healthPoint = 40;
+  // var hero = Hero();
+  // hero.healthPoint = 40;
 
-  var monster = Monster();
-  monster.healthPoint = 410;
+  // var monster = Monster();
+  // monster.healthPoint = 410;
 
   // print('hero point ${hero.healthPoint}');
   // print('monster point ${monster.healthPoint}');
@@ -25,11 +27,16 @@ main(List<String> args) {
   var monsters = <Monster>[];
   monsters.add(MonsterKecoa());
   monsters.add(MonsterUbur2());
-  monsters.add(MonsterUbur2());
+  monsters.add(MonsterUcoa());
 
   monsters.forEach((element) {
-    if (element is MonsterUbur2) {
-      print(element.eatHuman());
+    // if (element is MonsterUbur2) {
+    // print(element.move());
+    // print(element.eatHuman());
+    // }
+
+    if (element is FlyingMonster) {
+      print((element as FlyingMonster).fly());
     }
   });
 }
