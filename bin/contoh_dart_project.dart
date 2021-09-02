@@ -1,5 +1,3 @@
-import 'dart:developer';
-import 'dart:io';
 import 'package:contoh_dart_project/PersegiPanjang.dart';
 
 import 'package:contoh_dart_project/contoh_dart_project.dart'
