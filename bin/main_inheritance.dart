@@ -1,8 +1,5 @@
 import 'dart:io';
 
-import 'package:contoh_dart_project/example_inheritance/DrinkAbilityMixin.dart';
-import 'package:contoh_dart_project/example_inheritance/FlyingMonster.dart';
-import 'package:contoh_dart_project/example_inheritance/Hero.dart';
 import 'package:contoh_dart_project/example_inheritance/Knight.dart';
 import 'package:contoh_dart_project/example_inheritance/Monster.dart';
 import 'package:contoh_dart_project/example_inheritance/MonsterKecoa.dart';
